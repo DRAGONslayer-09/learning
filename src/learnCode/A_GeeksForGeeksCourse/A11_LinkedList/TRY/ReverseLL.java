@@ -43,6 +43,7 @@ public class ReverseLL {
     public static void main(String[] args) {
         ReverseLL ll = new ReverseLL();
         ll.add(25);
+        ll.add(45);
         ll.add(55);
         ll.add(85);
         ll.add(36);
