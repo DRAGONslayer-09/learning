@@ -45,6 +45,7 @@ public class ReverseLL {
         ll.add(25);
         ll.add(55);
         ll.add(85);
+        ll.add(36);
         System.out.println("Original");
         print(ll.head);
 
