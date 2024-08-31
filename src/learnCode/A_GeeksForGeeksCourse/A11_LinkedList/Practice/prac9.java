@@ -21,7 +21,7 @@ public class prac9 {
             secLast= secLast.next;
         secLast.next = null;
     }
-    public void add(int data){
+public void add(int data){
         node newnode = new node(data);
         if (head==null){
             head = newnode;
