@@ -74,8 +74,6 @@ public class ll {
        list.printx(deleteNode);
        list.printx(delLast);
 
-
-
     }
 }
 
