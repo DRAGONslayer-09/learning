@@ -2,14 +2,7 @@ package learnCode.A_GeeksForGeeksCourse.A11_LinkedList.TRY;
 
 public class reverseDoubly {
     // reverse the doubly linked list
-    class Node {
-        int data;
-        SizeofLL.Node next;
-        Node(int x){
-            this.data = x;
-            this.next = null;
-        }
-    }
+
     public static void main(String[] args) {
 
     }
