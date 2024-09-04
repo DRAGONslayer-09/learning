@@ -9,6 +9,9 @@ public class removeDupes {
             next = null;
         }
     }
+    static void print(Nodem head){
+
+    }
 
     public static void main(String[] args) {
 

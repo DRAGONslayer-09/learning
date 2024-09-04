@@ -10,6 +10,7 @@ public class reverseDoubly {
             next = null;
         }
     }
+
     public static void main(String[] args) {
 
     }
