@@ -4,7 +4,7 @@ public class reverseDoubly {
     // reverse the doubly linked list
     class Nodet{
         int value;
-        RemoveNode.Node next;
+        Nodet next;
         Nodet(int x){
             value = x;
             next = null;

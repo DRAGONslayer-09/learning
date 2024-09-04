@@ -1,15 +1,15 @@
 package learnCode.A_GeeksForGeeksCourse.A11_LinkedList.TRY;
 
 public class RemoveNode {
-    class Node{
+    class RemNode{
         int value;
-        Node next;
-        Node(int x){
+        RemNode next;
+        RemNode(int x){
             value = x;
             next = null;
         }
     }
-    public void remove(Node head, int val){
+    public void remove(RemNode head, int val){
 
     }
 
