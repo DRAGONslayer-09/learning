@@ -10,7 +10,9 @@ public class reverseDoubly {
             next = null;
         }
     }
+    static void print(Nodet head){
 
+    }
     public static void main(String[] args) {
 
     }
