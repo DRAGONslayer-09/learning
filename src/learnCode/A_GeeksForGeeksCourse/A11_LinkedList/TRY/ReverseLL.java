@@ -50,7 +50,7 @@ public class ReverseLL {
         System.out.println("Original");
         print(ll.head);
 
-        ll.head = rev(ll.head);
+        ll.head = rev(ll .head);
         System.out.println("Reverse");
         print(ll.head);
     }
