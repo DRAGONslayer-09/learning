@@ -10,14 +10,16 @@ public class ReverseDoubly {
             Next = Prev = null;
         }
     }
-    public Node reve(Node head){
+    public static Node reve(Node head){
+        if (head == null)
+            return null;
         Node temp = head.Prev;
         head.Prev = head.Next;
         head.Next = temp;
         if (head.Prev == null){
             return head;
         }
-        return head;
+        return reve(head.Prev);
     }
     public static Node add(Node head, int val){
         Node newval = new Node(val);
@@ -46,6 +48,9 @@ public class ReverseDoubly {
         System.out.println("Before Rev");
         print(head);
         System.out.println("After Rev");
+        //System.out.println(head = head.Prev);
+        head = reve(head);
         print(head);
+
     }
 }
