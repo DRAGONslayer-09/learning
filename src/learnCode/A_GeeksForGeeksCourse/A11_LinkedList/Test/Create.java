@@ -15,14 +15,18 @@ public class Create {
         if (head==null)
             head = val;
         else {
-            Node temp = head;
+            val.Next = head;
+            head.Prev = val;
+            head= val;
+
+            /*Node temp = head;
             while(temp.Next != null){
                 temp = temp.Next;
             }temp.Next = head;
-            head = temp;
+            head = temp;*/
         }return head;
     }
-    public static void addLast(Node head, int data){
+    public static Node addLast(Node head, int data){
         Node nval = new Node(data);
         if (head== null)
             head = nval;
@@ -31,12 +35,18 @@ public class Create {
             while(temp.Next!= null){
                 temp = temp.Next;
             }temp.Next = nval;
+            nval.Prev = temp;
         }
+        return head;
     }
     public static Node DelF(Node head){
         if (head == null) {
             System.out.println(head);
-        } return head.Next;
+        } if (head.Next == null)
+            return null;
+        head = head.Next;
+        head.Prev = null;
+        return head;
     }
     public static Node DelL(Node head){
         if (head == null)
@@ -44,16 +54,19 @@ public class Create {
         Node temp = head;
         while(temp.Next!=null){
             temp = temp.Next;
-        }
-        if (temp.Prev != null){
+        }temp.Prev.Next = null;
+        /*if (temp.Next != null){
             temp.Prev.Next = null;
-                //head= head.Prev;
-        }else{
-            head =null;
+                head= head.Prev;
         }
+        else{
+            head =null;
+        }*/
         return head;
     }
     public static Node print(Node head){
+        if (head == null)
+            return null;
         while(head!=null){
             System.out.println(head.data);
             head = head.Next;
@@ -64,9 +77,9 @@ public class Create {
     public static void main(String[] args) {
         Node head= null;
         head = addFirst(head,15);
-        addFirst(head,30);
-        addLast(head,45);
-        addLast(head, 60);
+        head= addFirst(head,30);
+        head= addLast(head,45);
+        head = addLast(head, 60);
         head = DelF(head);
         head = DelL(head);
         print(head);
