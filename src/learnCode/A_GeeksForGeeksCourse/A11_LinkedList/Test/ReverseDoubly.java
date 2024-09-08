@@ -30,7 +30,7 @@ public class ReverseDoubly {
             while(temp.Next!=null){
                 temp = temp.Next;
             }temp.Next = newval;
-            newval.Prev = temp.Prev;
+            newval.Prev = temp;
         }return head;
     }
     public static void print(Node head){

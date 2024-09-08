@@ -46,6 +46,7 @@ public class reverseDoubly {
         head = add(head,36);
         head = add(head,48);
         head = add(head,60);
+        print(head);
         head = rev(head);
         System.out.println("Reversed List: ");
         print(head);
