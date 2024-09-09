@@ -7,7 +7,7 @@ public class Reverse {
         Node Next,Prev;
         Node(int value){
             this.value = value;
-            Next = Prev = null;
+            Next = null;
         }
     }
     static Node add(Node head, int value) {
