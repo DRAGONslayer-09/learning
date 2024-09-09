@@ -36,6 +36,23 @@ public class Reverse {
         }head= tem;
         return head;
     }
+
+    // For reversal of Doubly linked list
+    static Node revDoubly(Node head){
+        if (head == null || head.Next == null)
+            return null;
+        Node prev = head;
+        Node curr = head.Next;
+        while(curr !=null){
+            Node next = curr.Next;
+            curr.Next= prev.Next;
+
+            prev = curr;
+            curr = next;
+        }
+        head.Next = null;
+        head = prev;
+    }
     static void print(Node head){
         while(head!=null){
             System.out.println(head.value);
