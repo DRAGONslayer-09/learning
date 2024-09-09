@@ -52,6 +52,7 @@ public class Reverse {
         }
         head.Next = null;
         head = prev;
+        return head;
     }
     static void print(Node head){
         while(head!=null){
